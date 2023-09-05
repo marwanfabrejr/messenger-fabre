@@ -8,8 +8,9 @@ import ActiveStatus from './components/ActiveStatus'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Messenger Clone',
-  description: 'Messenger Clone',
+  title: 'FABRE | Always stay in touch.',
+  description:
+    'Hang out anytime, anywhere. Fabre makes it easy and fun to stay close to your favorite people.',
 }
 
 export default function RootLayout({
@@ -19,6 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <head>
+        <link rel='icon' href='/images/logo.png' />
+      </head>
       <body className={inter.className}>
         <AuthContext>
           <ToasterContext />
